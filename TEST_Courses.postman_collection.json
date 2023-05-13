@@ -1,0 +1,139 @@
+{
+	"info": {
+		"_postman_id": "5f33cc31-c591-4f07-b46e-047df50c9bca",
+		"name": "TEST_Courses",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get_all Courses",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:1113/courses/",
+					"host": [
+						"localhost"
+					],
+					"port": "1113",
+					"path": [
+						"courses",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Addcourse_by_body",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1,\r\n    \"title\": \"Java \",\r\n    \"description\": \"Java Programiming\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:1113/courses",
+					"host": [
+						"localhost"
+					],
+					"port": "1113",
+					"path": [
+						"courses"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update_course_by_body",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1,\r\n    \"title\": \"Java \",\r\n    \"description\": \"Java Programiming 3167\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:1113/courses",
+					"host": [
+						"localhost"
+					],
+					"port": "1113",
+					"path": [
+						"courses"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:1111/home",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:1113/home",
+					"host": [
+						"localhost"
+					],
+					"port": "1113",
+					"path": [
+						"home"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:1112/courses",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:1113/courses/1/",
+					"host": [
+						"localhost"
+					],
+					"port": "1113",
+					"path": [
+						"courses",
+						"1",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete_course_by id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:1113/courses/2",
+					"host": [
+						"localhost"
+					],
+					"port": "1113",
+					"path": [
+						"courses",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
